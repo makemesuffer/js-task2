@@ -1,0 +1,20 @@
+const curry = (fn) => {
+    let parameters = fn.length;
+    return function func(...args) {
+        if (args.length >= parameters) return fn(...args);
+        else return function (...argss) {
+            let newArgs = args.concat(argss);
+            return func(...newArgs);
+        }
+    }
+};
+
+const sum = (a, b) => {
+    return a + b;
+};
+
+let test = curry(sum);
+
+console.log(test(2, 4));
+console.log(test(1));
+console.log(test(2)(3));
