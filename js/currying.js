@@ -9,11 +9,11 @@ const curry = (fn) => {
     }
 };
 
-const sum = (a, b) => {
+const summa = (a, b) => {
     return a + b;
 };
 
-let test = curry(sum);
+let test = curry(summa);
 
 console.log(test(2, 4));
 console.log(test(1));
