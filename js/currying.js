@@ -1,3 +1,4 @@
+console.log('-------------------CURRYING------------------');
 const curry = (fn) => {
     let parameters = fn.length;
     return function func(...args) {
@@ -18,3 +19,4 @@ let test = curry(summa);
 console.log(test(2, 4));
 console.log(test(1));
 console.log(test(2)(3));
+

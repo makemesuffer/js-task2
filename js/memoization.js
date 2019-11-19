@@ -1,3 +1,4 @@
+console.log('-----------------MEMOIZATION--------------------');
 let memoize = (fn) => {
     let cache = {};
     return function (...args) {
@@ -24,3 +25,5 @@ console.log(example(2,3));
 console.log(example(2,3));
 console.log(example(2,5));
 console.log(example(5,2));
+
+// console.log('-------------------------------------');
