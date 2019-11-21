@@ -2,18 +2,17 @@ console.log('-----------------MEMOIZATION--------------------');
 let memoize = (fn) => {
     let cache = {};
     return function (...args) {
-        if (undefined in args || null in args || NaN in args) {
-            throw new TypeError('undefined ili null ili NaN uberi!')
-        }
-        if (args in cache) {
+        const fix = JSON.stringify(args);
+        if (cache[fix]) {
             console.log('cached');
-            return cache[args];
+            return cache[fix];
         } else {
             console.log('to be cached');
             let res = fn.apply(this, args);
-            cache[args] = res;
+            cache[fix] = res;
             return res;
         }
+
     }
 };
 
