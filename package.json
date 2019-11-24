@@ -1,0 +1,26 @@
+{
+  "name": "javascriptstr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "precommit": "npm test",
+    "prepush": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/makemesuffer/js-task2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/makemesuffer/js-task2/issues"
+  },
+  "homepage": "https://github.com/makemesuffer/js-task2#readme",
+  "devDependencies": {
+    "eslint": "^6.7.0",
+    "husky": "^3.1.0",
+    "jest": "^24.9.0"
+  }
+}
