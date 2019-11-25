@@ -1,4 +1,3 @@
-console.log('-------------------CURRYING------------------');
 const curry = (fn) => {
     let parameters = fn.length;
     return function func(...args) {
@@ -10,14 +9,4 @@ const curry = (fn) => {
     }
 };
 
-const summa = (a, b) => {
-    return a + b;
-};
-
-let test = curry(summa);
-
-console.log(test(2, 4));
-console.log(test(1));
-console.log(test(2)(3));
-console.log(test(5, 3, 4));
-
+module.exports = curry;

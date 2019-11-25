@@ -1,5 +1,3 @@
-console.log('-------------------INHERITANCE------------------');
-
 class Shape {
     constructor(name) {
         this.name = name;
@@ -24,11 +22,6 @@ class Rectangle extends Shape {
 
 }
 
-let pryamoug = new Rectangle(4, 5);
-console.log(pryamoug.calculateArea());
-console.log(pryamoug.calculatePerimeter());
-
-
 class Square extends Rectangle {
     constructor(sideLength) {
         super();
@@ -37,10 +30,4 @@ class Square extends Rectangle {
     }
 }
 
-
-let kvadrat = new Square(5);
-console.log(kvadrat.calculateArea());
-console.log(kvadrat.calculatePerimeter());
-
-
-module.exports = Square;
+module.exports = {Square, Rectangle};
