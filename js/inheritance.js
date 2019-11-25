@@ -11,11 +11,9 @@ class Rectangle extends Shape {
         this.height = height;
         this.name = 'Rectangle';
     }
-
     calculateArea() {
         return this.width * this.height;
     }
-
     calculatePerimeter() {
         return (this.height + this.width) * 2;
     }
@@ -30,4 +28,4 @@ class Square extends Rectangle {
     }
 }
 
-module.exports = {Square, Rectangle};
+module.exports = {Rectangle,Square};

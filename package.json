@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "precommit": "npm test",
-    "prepush": "npm test"
+    "precommit": "npm test && esling js",
+    "prepush": "npm test && eslint js"
   },
   "repository": {
     "type": "git",

@@ -12,5 +12,6 @@ const reducePoly = (arr, cb, init) => {
     return newArr;
 };
 
+d;
 
 module.exports = reducePoly;
