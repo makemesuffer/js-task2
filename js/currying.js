@@ -9,6 +9,6 @@ const curry = (fn) => {
     }
 };
 
-export default curry;
-
 module.exports = curry;
+
+export default curry;

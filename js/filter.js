@@ -18,11 +18,10 @@ const filterPoly = (fn, arr) => {
     return newArr;
 };
 
-export default filterPoly;
 
 module.exports = filterPoly;
 
-
+export default filterPoly;
 
 
 

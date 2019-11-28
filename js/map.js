@@ -13,7 +13,8 @@ const mapPoly = (fn, arr) => {
     return newArr;
 };
 
-export default mapPoly;
 module.exports = mapPoly;
+
+export default mapPoly;
 
 
