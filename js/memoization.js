@@ -15,4 +15,5 @@ let memoize = (fn) => {
     }
 };
 
+export default memoize;
 module.exports = memoize;

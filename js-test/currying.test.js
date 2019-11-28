@@ -2,7 +2,7 @@ const curry = require('../js/currying');
 
 const sum = (a, b, c) => a + b + c;
 
-describe('testing curry function',()=>{
+describe('testing curry function', () => {
     it('should run as usual function without error', () => {
         const t = curry(sum);
         expect(t(2, 3, 4)).toBe(9);
@@ -23,13 +23,7 @@ describe('testing curry function',()=>{
         const t = curry(sum);
         expect(t(2, 3)).toEqual(expect.any(Function));
     });
-
-    /*it('should run the function three times',()=>{
-       const t = curry(sum);
-       const mockFunc = jest.fn();
-       const res = mockFunc(t);
-       expect(mockFunc).toHaveBeenCalledTimes(3);
-    })*/
-
 });
+
+
 

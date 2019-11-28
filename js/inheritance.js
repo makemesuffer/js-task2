@@ -28,4 +28,5 @@ class Square extends Rectangle {
     }
 }
 
+export {Shape,Rectangle,Square};
 module.exports = {Rectangle,Square};

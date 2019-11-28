@@ -15,4 +15,5 @@ describe('testing reduce function',()=>{
             expect(e.message).toBe('this is not an array');
         }
     });
+
 });
