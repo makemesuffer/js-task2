@@ -10,7 +10,8 @@ module.exports = {
         'SharedArrayBuffer': 'readonly'
     },
     'parserOptions': {
-        'ecmaVersion': 2018
+        'ecmaVersion': 2018,
+        "sourceType": "module",
     },
     'rules': {
         'accessor-pairs': 'error',
@@ -152,7 +153,7 @@ module.exports = {
         'no-implied-eval': 'error',
         'no-import-assign': 'error',
         'no-inline-comments': 'error',
-        'no-invalid-this': 'error',
+        'no-invalid-this': 'off',
         'no-iterator': 'error',
         'no-label-var': 'error',
         'no-labels': 'error',
